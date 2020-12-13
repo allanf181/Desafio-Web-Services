@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="150dp"
+        android:height="150dp">
+        <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#FFEFF2F5"/>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/raster_register"
+        android:width="96dp"
+        android:height="96dp"
+        android:top="24dp"
+        android:left="24dp">
+    </item>
+
+</layer-list>

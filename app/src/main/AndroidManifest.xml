@@ -9,14 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DesafioWebServices">
-        <activity android:name=".SplashActivity" android:theme="@style/Theme.DesafioWebServicesNoActionBar">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.DesafioWebServicesNoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" android:theme="@style/Theme.DesafioWebServicesNoActionBar"/>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.DesafioWebServicesNoActionBar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/register" />
     </application>
 
 </manifest>
