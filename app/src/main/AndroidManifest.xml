@@ -29,7 +29,11 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.DesafioWebServicesNoActionBar" />
-        <activity android:name=".ComicActivity" android:theme="@style/Theme.DesafioWebServicesNoActionBar"  />
+        <activity
+            android:name=".ComicActivity"
+            android:theme="@style/Theme.DesafioWebServicesNoActionBar" />
+        <activity android:name=".ImageActivity"
+            android:theme="@style/Theme.DesafioWebServicesNoActionBar" />
 
     </application>
 

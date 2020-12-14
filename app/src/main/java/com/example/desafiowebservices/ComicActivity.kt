@@ -1,5 +1,6 @@
 package com.example.desafiowebservices
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
@@ -25,5 +26,10 @@ class ComicActivity : AppCompatActivity() {
         Glide.with(binding.root).asBitmap()
             .load(intent.getStringExtra("img_hq"))
             .into(binding.ivHqThumb)
+        binding.ivHqThumb.setOnClickListener {
+            val i = Intent(this, ImageActivity::class.java)
+            i.putExtra("img_hq", intent.getStringExtra("img_hq"))
+            this.startActivity(i)
+        }
     }
 }
