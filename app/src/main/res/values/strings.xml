@@ -9,4 +9,7 @@
     <string name="register">Register</string>
     <string name="name">Name</string>
     <string name="save">Save</string>
+    <string name="published">"Published: "</string>
+    <string name="price">"Price: $"</string>
+    <string name="pages">"Pages: "</string>
 </resources>

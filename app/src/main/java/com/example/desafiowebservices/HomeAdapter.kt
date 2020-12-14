@@ -1,6 +1,7 @@
 package com.example.desafiowebservices
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -31,14 +32,17 @@ class HomeAdapter(var comics : List<Comic>, private val context: Context) : Adap
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val comic = comics[position]
         holder.bindView(comic)
-//        if(position == 0) {
-//            holder.itemView.setOnClickListener {
-//                val i = Intent(context, RestaurantActivity::class.java)
-//                i.putExtra("name", restaurante.nome)
-//                i.putExtra("img", restaurante.imageId)
-//                context.startActivity(i)
-//            }
-//        }
+        holder.itemView.setOnClickListener {
+            val i = Intent(context, ComicActivity::class.java)
+            i.putExtra("title", comic.title)
+            i.putExtra("img_back", comic.images[0].getFullUrl())
+            i.putExtra("img_hq", comic.thumbnail.getFullUrl())
+            i.putExtra("desc", comic.description)
+            i.putExtra("price", comic.prices[0].price)
+            i.putExtra("pages", comic.pageCount)
+            i.putExtra("date", comic.dates[0].getFormattedDate())
+            context.startActivity(i)
+        }
     }
 
     override fun getItemCount(): Int {
